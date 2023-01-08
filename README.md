@@ -1,4 +1,4 @@
-# se2022- Nhóm 13.2: Tìm hiểu về Blockchain ứng dụng.
+# se2022- Nhóm 13.2: Tìm hiểu về Blockchain ứng .
 ## Đề tài: Tìm hiểu về Blockchain và code một app kết nối với sàn giao dịch Binance, sử dụng Binance API để thiết kế 1 thuật toán tự động trading.
 ## Phần I: Nội dung cơ bản về Blockchain
 ### Khái niệm
