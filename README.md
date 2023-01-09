@@ -35,8 +35,8 @@
 * Mỗi nút trong Blockchain đều đang **lưu giữ một bản sao** của sổ kế toán. Do vậy, mỗi nút đều biết số dư tài khoản của bạn là bao nhiêu. Hệ thống Blockchain chỉ ghi lại mỗi giao dịch được yêu cầu chứ không hề theo dõi số dư tài khoản của bạn.
 * Để biết số dư trên ví điện tử của mình thì bạn cần xác thực và xác nhận tất cả các giao dịch đã diễn ra trên mạng lưới mà có liên quan tới ví điện tử của bạn.
 ### Nguyên lý tạo khối
-![image](https://user-images.githubusercontent.com/89736041/211307402-f4094f7d-521e-4ca3-b495-8093ebf22189.png)
 * Các giao dịch sau khi được gửi lên trên mạng lưới Blockchain sẽ được nhóm vào các khối và các giao dịch trong cùng 1 khối (block) được coi là đã xảy ra cùng thời điểm. Các giao dịch chưa được thực hiện trong 1 khối được coi là chưa được xác nhận.
+* ![image](https://user-images.githubusercontent.com/89736041/211307510-b5485279-6bb2-44f2-9891-05b0dcb2fb13.png)
 * Để được thêm vào Blockchain, mỗi khối phải chứa một đoạn mã đóng vai trò như một đáp án cho một vấn đề toán học phức tạp được tạo ra bằng **hàm mã hóa băm không thể đảo ngược**.
 * Cách duy nhất để giải quyết vấn đề toán học như vậy là **đoán các số ngẫu nhiên**, những số khi mà kết hợp với nội dung khối trước tạo ra một kết quả đã được hệ thống định nghĩa. Điều này nhiều khi có thể mất khoảng một năm cho một máy tính điển hình với một cấu hình cơ bản có thể đoán đúng các con số đáp án của vấn đề toán học này.
 * Mạng lưới quy định mỗi khối được tạo ra sau một quãng thời gian là **10 phút** một lần, bởi vì trong mạng lưới luôn có một số lượng lớn các máy tính đều tập trung vào việc đoán ra dãy số này. Nút nào giải quyết được vấn đề toán học như vậy sẽ được quyền gắn khối tiếp theo lên trên chuỗi và gửi nó tới toàn bộ mạng lưới.
