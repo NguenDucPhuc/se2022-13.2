@@ -13,16 +13,19 @@
 * **Public**: bất kỳ ai cũng có quyền đọc và ghi dữ liệu trên Blockchain. Quá trình xác thực giao dịch trên Blockchain này đòi hỏi phải có rất nhiều nút tham gia.
 * **Private**: người dùng chỉ có quyền đọc dữ liệu, quyền ghi thuộc về tổ chức thứ ba ( phải tuyệt đối tin cậy).
 * **Permissioned (hay còn gọi là Consortium)**: một dạng của Private nhưng bổ sung thêm 1 số tính năng khác, đây là sự kết hợp giữa Public và Private.
+* ![image](https://user-images.githubusercontent.com/89736041/211307142-11174ebc-3706-4706-a399-27d608eb2991.png)
 ### Các đặc điểm nổi bật của Blockchain
 * **Không thể làm giả, không thể phá hủy các chuỗi Blockchain**: theo như lý thuyết thì chỉ có máy tính lượng tử mới có thể giải mã Blockchain và công nghệ Blockchain biến mất khi không còn Internet trên toàn cầu.
 * **Bất biến**: dữ liệu trong Blockchain không thể sửa (có thể sửa nhưng sẽ để lại dấu vết) và sẽ lưu trữ mãi mãi.
 * **Bảo mật**: các thông tin, dữ liệu trong Blockchain được phân tán và an toàn tuyệt đối.
 * **Minh bạch** : ai cũng có thể theo dõi dữ liệu Blockchain đi từ địa chỉ này tới địa chỉ khác và có thể thống kê toàn bộ lịch sử trên địa chỉ đó.
 * **Hợp đồng thông minh** : là hợp đồng kỹ thuật số được nhúng vào đoạn code if-this-then-that (IFTTT), cho phép chúng tự thực thi mà không cần bên thứ ba.
+* ![image](https://user-images.githubusercontent.com/89736041/211307252-4f9d7221-915a-4a86-ba0f-5507359edd98.png)
 ### Blockchain hoạt động như thế nào
 * Ứng dụng được biết đến và thảo luận nhiều nhất về công nghệ Blockchain chính là đồng tiền điện tử. Bitcoin là một đơn vị tiền tệ kỹ thuật số với mã là BTC, cũng giống như đô la Mỹ bản thân nó không mang giá trị, nó chỉ có giá trị bởi vì có một cộng đồng đồng ý sử dụng nó làm đơn vị giao dịch hàng hóa và dịch vụ.
 * Để theo dõi số lượng Bitcoin mà mỗi người sở hữu trong các tài khoản nhất định và theo dõi các giao dịch phát sinh từ đó thì chúng ta cần đến một cuốn sổ kế toán, trong trường hợp này nó chính là Blockchain và đây thực tế là một tệp kỹ thuật số theo dõi tất cả các giao dịch Bitcoin.
 ### Nguyên lý mã hóa
+![image](https://user-images.githubusercontent.com/89736041/211307337-f5a829a8-e71c-4c03-8839-98c6f652bee3.png)
 * Sổ cái được duy trì bởi các máy tính trong mạng ngang hàng được kết nối với nhau.
 * Mạng lưới Bitcoin là **mạng lưới phân tán** và ** không cần bên thứ ba đóng vai trò trung gian xử lý giao dịch**. 
 * Hệ thống Blockchain không yêu cầu sự tin cậy mà được bảo đảm bởi độ tin cậy có được thông qua các hàm mã hóa toán học đặc biệt.
@@ -32,6 +35,7 @@
 * Mỗi nút trong Blockchain đều đang **lưu giữ một bản sao** của sổ kế toán. Do vậy, mỗi nút đều biết số dư tài khoản của bạn là bao nhiêu. Hệ thống Blockchain chỉ ghi lại mỗi giao dịch được yêu cầu chứ không hề theo dõi số dư tài khoản của bạn.
 * Để biết số dư trên ví điện tử của mình thì bạn cần xác thực và xác nhận tất cả các giao dịch đã diễn ra trên mạng lưới mà có liên quan tới ví điện tử của bạn.
 ### Nguyên lý tạo khối
+![image](https://user-images.githubusercontent.com/89736041/211307402-f4094f7d-521e-4ca3-b495-8093ebf22189.png)
 * Các giao dịch sau khi được gửi lên trên mạng lưới Blockchain sẽ được nhóm vào các khối và các giao dịch trong cùng 1 khối (block) được coi là đã xảy ra cùng thời điểm. Các giao dịch chưa được thực hiện trong 1 khối được coi là chưa được xác nhận.
 * Để được thêm vào Blockchain, mỗi khối phải chứa một đoạn mã đóng vai trò như một đáp án cho một vấn đề toán học phức tạp được tạo ra bằng **hàm mã hóa băm không thể đảo ngược**.
 * Cách duy nhất để giải quyết vấn đề toán học như vậy là **đoán các số ngẫu nhiên**, những số khi mà kết hợp với nội dung khối trước tạo ra một kết quả đã được hệ thống định nghĩa. Điều này nhiều khi có thể mất khoảng một năm cho một máy tính điển hình với một cấu hình cơ bản có thể đoán đúng các con số đáp án của vấn đề toán học này.
