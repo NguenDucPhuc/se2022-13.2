@@ -4,6 +4,7 @@
 ### Khái niệm
 * Blockchain là công nghệ chuỗi – khối, cho phép truyền tải dữ liệu một cách an toàn dựa trên hệ thống mã hóa vô cùng phức tạp (tương tự như cuốn sổ cái kế toán của một công ty, nơi mà tiền được giám sát chặt chẽ và ghi nhận mọi giao dịch trên mạng ngang hàng). 
 * Mỗi khối (block) đều chứa thông tin về thời gian khởi tạo và được liên kết với khối trước đó, kèm theo đó là một mã thời gian và dữ liệu giao dịch. Dữ liệu khi đã được mạng lưới chấp nhận thì sẽ không có cách nào thay đổi được. Blockchain được thiết kế để ***chống lại việc gian lận, thay đổi của dữ liệu***.
+* ![image](https://user-images.githubusercontent.com/89736041/211306927-c0a95a18-cdfb-4a0d-8a32-ab011ac7788e.png)
 ### Công nghệ Blockchain - sự kết hợp giữa 3 loại công nghệ
 * **Mật mã học**: để đảm bảo tính minh bạch, toàn vẹn và riêng tư thì công nghệ Blockchain đã sử dụng public key và hash function.
 * **Mạng ngang hàng**: mỗi một nút trong mạng được xem như một client và cũng là server để lưu trữ bản sao ứng dụng.
