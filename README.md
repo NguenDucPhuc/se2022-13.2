@@ -28,8 +28,8 @@
 ### III. Blockchain hoạt động như thế nào
 * Ứng dụng được biết đến và thảo luận nhiều nhất về công nghệ Blockchain chính là đồng tiền điện tử. Bitcoin là một đơn vị tiền tệ kỹ thuật số với mã là BTC, cũng giống như đô la Mỹ bản thân nó không mang giá trị, nó chỉ có giá trị bởi vì có một cộng đồng đồng ý sử dụng nó làm đơn vị giao dịch hàng hóa và dịch vụ.
 Để theo dõi số lượng Bitcoin mà mỗi người sở hữu trong các tài khoản nhất định và theo dõi các giao dịch phát sinh từ đó thì chúng ta cần đến một cuốn sổ kế toán, trong trường hợp này nó chính là Blockchain và đây thực tế là một tệp kỹ thuật số theo dõi tất cả các giao dịch Bitcoin.
-
 * Tệp sổ cái này không được lưu trữ trong một máy chủ trung tâm, như trong một ngân hàng hoặc trong một trung tâm dữ liệu mà ngược lại nó được phân phối trên toàn thế giới thông qua một mạng lưới các máy tính ngang hàng với vai trò lưu trữ dữ liệu và thực thi các tính toán. Mỗi máy tính này đại diện cho một “nút” của mạng lưới Blockchain và mỗi nút đều có một bản sao của tệp sổ cái này.
+* ![image](https://user-images.githubusercontent.com/89736041/211459603-3d011005-4624-4ee7-a888-0368d429f11b.png)
 ### Nguyên lý mã hóa
 ![image](https://user-images.githubusercontent.com/89736041/211307337-f5a829a8-e71c-4c03-8839-98c6f652bee3.png)
 * Trên thực tế, cuốn sổ cái luôn được duy trì bởi các máy tính trong mạng ngang hàng được kết nối với nhau. Vì thế, nó sẽ có một số điểm khác biệt:
