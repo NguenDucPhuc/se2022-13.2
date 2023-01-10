@@ -1,7 +1,7 @@
 # se2022- Nhóm 13.2: Tìm hiểu về Blockchain ứng dụng.
 ## Đề tài: Tìm hiểu về Blockchain và code một app kết nối với sàn giao dịch Binance, sử dụng Binance API để thiết kế 1 thuật toán tự động trading.
 ## Phần I: Nội dung cơ bản về Blockchain
-### Khái niệm
+### I. Khái niệm
 * Blockchain là công nghệ chuỗi – khối, cho phép truyền tải dữ liệu một cách an toàn dựa trên hệ thống mã hóa vô cùng phức tạp (tương tự như cuốn sổ cái kế toán của một công ty, nơi mà tiền được giám sát chặt chẽ và ghi nhận mọi giao dịch trên mạng ngang hàng). 
 * Mỗi khối (block) đều chứa thông tin về thời gian khởi tạo và được liên kết với khối trước đó, kèm theo đó là một mã thời gian và dữ liệu giao dịch. Dữ liệu khi đã được mạng lưới chấp nhận thì sẽ không có cách nào thay đổi được. Blockchain được thiết kế để ***chống lại việc gian lận, thay đổi của dữ liệu***.
 * ![image](https://user-images.githubusercontent.com/89736041/211306927-c0a95a18-cdfb-4a0d-8a32-ab011ac7788e.png)
@@ -18,14 +18,14 @@
 * **Công nghệ Blockchain 1.0**: Tiền tệ và Thanh toán: Ứng dụng chính của phiên bản này là tiền mã hoá: bao gồm việc chuyển đổi tiền tệ, kiều hối và tạo lập hệ thống thanh toán kỹ thuật số. Đây cũng là lĩnh vực quen thuộc với chúng ta nhất mà đôi khi khá nhiều người lầm tưởng Bitcoin và Blockchain là một.
 * **Công nghệ Blockchain 2.0**: Tài chính và Thị trường: Ứng dụng xử lý tài chính và ngân hàng: mở rộng quy mô của Blockchain, đưa vào các ứng dụng tài chính và thị trường. Các tài sản bao gồm cổ phiếu, chi phiếu, nợ, quyền sở hữu và bất kỳ điều gì có liên quan đến thỏa thuận hay hợp đồng.
 * **Công nghệ Blockchain 3.0**: Thiết kế và Giám sát hoạt động: Đưa Blockchain vượt khỏi biên giới tài chính, và đi vào các lĩnh vực như giáo dục, chính phủ, y tế và nghệ thuật. 
-### Các đặc điểm nổi bật của Blockchain
+### II. Các đặc điểm nổi bật của Blockchain
 * **Không thể làm giả, không thể phá hủy các chuỗi Blockchain**: theo như lý thuyết thì chỉ có máy tính lượng tử mới có thể giải mã Blockchain và công nghệ Blockchain biến mất khi không còn Internet trên toàn cầu.
 * **Bất biến**: dữ liệu trong Blockchain không thể sửa (có thể sửa nhưng sẽ để lại dấu vết) và sẽ lưu trữ mãi mãi.
 * **Bảo mật**: các thông tin, dữ liệu trong Blockchain được phân tán và an toàn tuyệt đối.
 * **Minh bạch** : ai cũng có thể theo dõi dữ liệu Blockchain đi từ địa chỉ này tới địa chỉ khác và có thể thống kê toàn bộ lịch sử trên địa chỉ đó.
 * **Hợp đồng thông minh** : là hợp đồng kỹ thuật số được nhúng vào đoạn code if-this-then-that (IFTTT), cho phép chúng tự thực thi mà không cần bên thứ ba.
 * ![image](https://user-images.githubusercontent.com/89736041/211307252-4f9d7221-915a-4a86-ba0f-5507359edd98.png)
-### Blockchain hoạt động như thế nào
+### III. Blockchain hoạt động như thế nào
 * Ứng dụng được biết đến và thảo luận nhiều nhất về công nghệ Blockchain chính là đồng tiền điện tử. Bitcoin là một đơn vị tiền tệ kỹ thuật số với mã là BTC, cũng giống như đô la Mỹ bản thân nó không mang giá trị, nó chỉ có giá trị bởi vì có một cộng đồng đồng ý sử dụng nó làm đơn vị giao dịch hàng hóa và dịch vụ.
 Để theo dõi số lượng Bitcoin mà mỗi người sở hữu trong các tài khoản nhất định và theo dõi các giao dịch phát sinh từ đó thì chúng ta cần đến một cuốn sổ kế toán, trong trường hợp này nó chính là Blockchain và đây thực tế là một tệp kỹ thuật số theo dõi tất cả các giao dịch Bitcoin.
 
@@ -67,12 +67,12 @@ Do xác suất việc xây dựng các block đồng thời là rất thấp nê
 Mỗi block chứa một tham chiếu đến khối trước đó, và tham chiếu đó là một phần của vấn đề toán học cần được giải quyết để truyền khối sau tới mạng lưới. Vì vậy, rất khó để tính toán trước một loạt các block bởi nó cần tính ra một số lượng lớn các số ngẫu nhiên cần thiết để giải quyết một khối và đặt nó trên blockchain.
 Các giao dịch trong mạng lưới blockchain của bitcoin được bảo vệ bởi một cuộc chạy đua tính toán toán học: với bất kỳ kẻ tấn công nào muốn cạnh tranh với toàn bộ mạng lưới.
 * Do đó, giao dịch ngày càng an toàn hơn theo thời gian. Và những khối đã được thêm vào chuỗi trong quá khứ bao giờ cũng an toàn hơn so với những khối mới được thêm vào. Bởi một block được thêm vào chuỗi trung bình cứ 10p một lần cho nên trong khoảng 1h kể từ khi giao dịch được nhóm vào trong khối đầu tiên của nó sẽ tạo ra một xác suất khá cao rằng giao dịch đã được xử lý và không thể đảo ngược.
-### Công việc của một lập trình viên Blockchain
+### IV. Công việc của một lập trình viên Blockchain
 * Tạo, kiểm tra và triển khai sản phẩm blockchain mới.
 * Cập nhật sản phẩm.
 * Nghiên cứu công nghệ mới để ứng dụng vào các dự án… là các công việc chung của một lập trình viên blockchain.
 Các đơn vị tuyển dung lập trình viên blockchain, kỹ sư blockchain khá đa dạng từ các công ty công nghệ, công ty truyền thông, các công ty cung cấp giải pháp blockchain hay các công ty, ngân hàng, tổ chức tài chính có nhu cầu xây dựng hệ thống trên nền tảng blockchain.
-### Ứng dụng thực tiễn của công nghệ Blockchain trong cuộc sống
+### V. Ứng dụng thực tiễn của công nghệ Blockchain trong cuộc sống
 * **Một số ngành công nghiệp mà công nghệ Blockchain có thể tác động đến như**:
 - Công nghệ ô tô Automotive (Automotive)
 - Chế tạo (Manufacturing)
